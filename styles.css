@@ -37,7 +37,7 @@ body {
 }
 
 .heading {
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
   color: blueviolet;
   text-decoration: underline;
@@ -45,16 +45,17 @@ body {
   font-size: 3rem;
   margin: 0px;
   padding:0px;
+  display: block;
 }
 
 #h2 {
+  margin-top: 0;
+  display: block;
   color:white;
   text-decoration: underline;
   font-size: 2rem;
 }
 
-
- 
 .navigation {
   list-style-type: none;
   margin: 0;
@@ -80,15 +81,14 @@ body {
 
 .navigation li a:hover {
   background-color: #ff006e;
-  color: #ffbe0b;
+  color: white;
 }
-
-
 
 #h3-title {
   margin:0;
   padding:0;
   height: 5vh;
+  width: 20vw;
   background-color: #ff006e;
   color: #3a0ca3;
   border-style: line;
@@ -104,59 +104,57 @@ body {
     margin: 0px;
     padding:0px;
     display:inline-flex;
-    background-color: #00bbf9;
     color: #f9f7f3;
   }
 
   #h4-title {
-  height: 5vh;
-  background-color: #ff006e;
-  color: #3a0ca3;
-  border-style: line;
-  border-color: white;
-  font-stretch: expanded;
-  font-weight: bold;
-  text-align: center;
-  font-size: 32px;
-  text-decoration: underline;
-  }
+    margin:0;
+    padding:0;
+    height: 5vh;
+    width: 20vw;
+    background-color: #ff006e;
+    color: #3a0ca3;
+    border-style: line;
+    border-color: white;
+    font-stretch: expanded;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    }
+ 
+.hobbies-and-interests {
+  margin: 0px;
+  padding:0px;
+  color: #f9f7f3;
+  display:inline-flex;
+}   
 
-  .Hobbies-and-interests {
-    margin: 0px;
-    padding:0px;
-    background-color: #00bbf9;
-    color: #f9f7f3;
-  }
+#h5-title {
+      height: 5vh;
+      width: 28vw;
+      background-color: #ff006e;
+      color: #3a0ca3;
+      border-color: white;
+      font-stretch: expanded;
+      font-weight: bold;
+      text-align: center;
+      font-size: 32px;
+      text-decoration: underline;
+      }
 
 
-  #LisaDog {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-wrap:;
-  } 
-
-  #Visiting-Pisa {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-  } 
-
-#h5 {
-  height: 5vh;
-  background-color: #ff006e;
-  color: #3a0ca3;
-  border-style: line;
-  border-color: white;
-  font-stretch: expanded;
-  font-weight: bold;
-  text-align: center;
-  font-size: 32px;
-  text-decoration: underline;
-  }
-}
 .socials {
-background-color: #ff006e;
+margin: 0px;
+padding: 0px;
+font-size: 1rem;
 color:azure;
+text-align: center;
+}
+
+@media only screen and (max-width:800px) and (min-width:600px) {
+  .container {
+display: grid;
+grid-template-rows: auto;
+  }
 }
